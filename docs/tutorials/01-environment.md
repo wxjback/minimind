@@ -10,6 +10,11 @@
 ```bash
 pip install -r requirements.txt -i https://pypi.tuna.tsinghua.edu.cn/simple
 ```
+2. 由于requirements.txt 中引用了 tiktoken包，该包的安装需要rust环境编译，所以需要安装rust环境：
+```bash
+curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+```bash
+安装rust环境，需注意网络条件，可能需要更换镜像源。
 
 ## 开发工具
 1. IDE选择与配置
